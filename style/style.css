@@ -1,0 +1,150 @@
+*{
+  margin: 0 auto;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  /*alinhamento horizontal*/
+  justify-content: center;
+  /*alinhamento vertical*/
+  align-items: center;
+  flex-direction: column;
+  background-color: #22272e;
+}
+
+.container{
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*primeiro parâmetro top e botton(em cima e embaixo), segundo parâmetro right e left (esquerda e direita). OBS!: também serve para margin*/
+  padding: 0 1rem;
+}
+
+.logo{
+  max-width: 227px;
+}
+
+.title{
+  text-align: center;
+  color: #fff;
+  margin: 24px 0;
+}
+
+.form label{
+  color: #fff;
+  font-size: 20px;
+}
+
+.input{
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 0 1rem;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.button{
+  width: 100%;
+  height: 48px;
+  background-color: #ff0035;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.result{
+  background-color: #4500c5;
+  max-width: 520px;
+  padding: 20px 28px;
+  text-align: center;
+  margin-top: 28px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #0d073f ;
+  /*retira a capacidade do usuário selecionar o texto*/
+  user-select: none;
+  transition: transform 0.8s;
+}
+
+.hide{
+  display: none;
+}
+
+.result span{
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.result:hover{
+  transform: scale(1.1);
+}
+
+#text-result{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.info{
+  position: fixed;
+  right: 14px;
+  bottom: 22px;
+}
+
+.info-img{
+  height: 66px;
+  width: 66px;
+}
+
+.tooltip{
+  color: #fff;
+  background-color: #4500c5;
+  padding: 10px 8px;
+  border-radius: 5px;
+  position: relative;
+  bottom: 28px;
+  display: none;
+}
+
+.info:hover .tooltip{
+  display: inline;
+}
+
+.sobre{
+  max-width: 620px;
+  background-color: #4500c5;
+  padding: 24px 14px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.sobre p{
+  color: #fff;
+  margin-bottom: 8px;
+  line-height: 150%;
+}
+
+.button-calcular{
+  background-color: #ff0035;
+  height: 48px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 24px;
+  border-radius: 5px;
+}
